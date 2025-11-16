@@ -4,67 +4,142 @@ import { useState } from 'react';
 const teamMembers = [
   {
     name: 'Raghavendra Baheti',
-    role: 'Founder & AI Lead',
-    bio: 'Pioneering AI solutions and leading innovation',
+    role: 'Founder & AI/Full-Stack Lea',
+    bio: 'Dedicated to building real-world AI systems and scalable full-stack products, with a strong focus on innovation, hackathons, and impact-driven tech.',
     location: 'San Francisco, CA',
-    expertise: ['Machine Learning', 'Deep Learning', 'NLP', 'Computer Vision'],
-    achievements: 'Winner of 5+ AI Hackathons',
-    favoriteTools: 'PyTorch, TensorFlow, Python',
+    expertise: [
+      'Artificial Intelligence',
+      'Machine Learning',
+      'Generative AI',
+      'Full-Stack Development',
+      'Python',
+      'React',
+      'FastAPI',
+      'Cloud & DevOps'
+    ],
+    achievements: [
+      'Winner of multiple Web3 & AI Hackathons',
+      'Built 10+ real-world AI & full-stack projects',
+      'Top performer in college-level tech competitions'
+    ],
+    favoriteTools: [
+      'Python', 
+      'PyTorch',
+      'FastAPI',
+      'React.js',
+      'MongoDB',
+      'MySQL',
+      'Docker'
+    ],
     socials: {
-      github: '#',
-      linkedin: '#',
+      github: 'https://github.com/raghav',
+      linkedin: 'https://www.linkedin.com/in/raghavendra',
       twitter: '#',
-      email: 'raghavendra@hackthemteam.com',
+      email: 'bahetiraghav990@gmail.com'
     },
   },
   {
-    name: 'Alex Chen',
-    role: 'Co-founder & Dev Lead',
-    bio: 'Full-stack architect and technical visionary',
-    location: 'Seattle, WA',
-    expertise: ['System Architecture', 'Cloud Computing', 'DevOps', 'Microservices'],
-    achievements: 'Built 10+ production systems',
-    favoriteTools: 'Docker, Kubernetes, AWS',
+      name: 'Toheed Akhtar',
+      role: 'Co-Founder & AI/ML Lead',
+      bio: 'AI/ML engineer and full-stack problem solver, passionate about architecting scalable systems, building enterprise-grade AI solutions, and driving innovation through deep technical expertise.',
+      location: 'India',
+      expertise: [
+    'Machine Learning',
+    'Deep Learning',
+    'GenAI',
+    'System Architecture',
+    'Cloud Computing',
+    'DevOps',
+    'Microservices',
+    'Full-Stack Engineering'
+  ],
+  achievements: [
+    'Runner-up at Lenden TMP (Multilingual AI Sales Assistant)',
+    'Finalist (Top 5) at Logithon’25 IIT Bombay — India’s biggest logistics hackathon',
+    'National Qualifier at WHCL’25 (World Computer Hacker League)',
+    'Built 10+ production-level AI and full-stack systems'
+  ],
+  favoriteTools: [
+    'PyTorch',
+    'HuggingFace',
+    'LangGraph',
+    'FastAPI',
+    'React',
+    'Docker',
+    'AWS',
+    'PostgreSQL'
+  ],
+  socials: {
+    github: '#',
+    linkedin: '#',
+    twitter: '#',
+    email: 'toheedak443@gmail.com'
+  },
+},
+  {
+    name: 'Vansh Bhatnagar  ',
+    role: 'Co-Founder & Full-Stack Lead',
+    bio: 'Full-stack developer and problem solver, passionate about building scalable and user-friendly web applications, and driving innovation through deep technical expertise.',
+    location: 'India',
+    expertise: [
+      'Full-Stack Development',
+      'React',
+      'Node.js',
+      'FastAPI',
+      'Docker',
+      'Cloud & DevOps'
+    ],
+    achievements: [
+      'Winner of multiple Web3 & AI Hackathons',
+      'Built 10+ real-world AI & full-stack projects',
+      'Top performer in college-level tech competitions'
+    ],
+    favoriteTools: [
+      'Python', 
+      'PyTorch',
+      'FastAPI',
+      'React.js',
+      'MongoDB',
+      'MySQL',
+      'Docker'
+    ],
     socials: {
-      github: '#',
-      linkedin: '#',
+      github: 'https://github.com/vansh',
+      linkedin: 'https://www.linkedin.com/in/vansh',
       twitter: '#',
-      email: 'alex@hackthemteam.com',
+      email: 'vanshbhatnagar2004@gmail.com'
     },
   },
   {
-    name: 'Sarah Martinez',
-    role: 'Frontend Engineer',
-    bio: 'Crafting pixel-perfect user experiences',
-    location: 'Austin, TX',
-    expertise: ['React', 'Vue.js', 'UI/UX Design', 'Animation'],
-    achievements: 'Designer of 20+ award-winning interfaces',
-    favoriteTools: 'React, Tailwind, Figma',
-    socials: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
-      email: 'sarah@hackthemteam.com',
-    },
-  },
-  {
-    name: 'Jordan Kim',
-    role: 'Designer & Product Lead',
+    name: 'Vinit Jain',
+    role: 'Designer & Full-Stack Lead',
     bio: 'Designing the future of digital products',
-    location: 'New York, NY',
-    expertise: ['Product Strategy', 'Design Systems', 'User Research', 'Prototyping'],
-    achievements: 'Led design for 15+ successful products',
-    favoriteTools: 'Figma, Sketch, Adobe XD',
+    location: 'India',
+    expertise: ['Full-Stack Development', 'React', 'Node.js', 'FastAPI', 'Docker', 'Cloud & DevOps'],
+    achievements: [
+      'Winner of multiple Web3 & AI Hackathons',
+      'Built 10+ real-world AI & full-stack projects',
+      'Top performer in college-level tech competitions'
+    ],
+    favoriteTools: [
+      'Python', 
+      'PyTorch',
+      'FastAPI',
+      'React.js',
+      'MongoDB',
+      'MySQL',
+      'Docker'
+    ],
     socials: {
-      github: '#',
-      linkedin: '#',
+      github: 'https://github.com/vinit',
+      linkedin: 'https://www.linkedin.com/in/vinit',
       twitter: '#',
-      email: 'jordan@hackthemteam.com',
+      email: 'vinitjain2004@gmail.com'
     },
   },
   {
-    name: 'Taylor Singh',
-    role: 'DevOps & Research',
+    name: 'Mudit Gupta',
+    role: 'Designer & Research',
     bio: 'Building infrastructure for tomorrow',
     location: 'Boston, MA',
     expertise: ['CI/CD', 'Infrastructure as Code', 'Security', 'Monitoring'],

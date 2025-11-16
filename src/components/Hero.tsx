@@ -8,28 +8,24 @@ interface HeroProps {
 const teamPhotos = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-    caption: 'Team HackThem at Tech Summit 2024',
+    image: '/images/home/1.jpeg',
+    caption: 'Team HackThem',
   },
   {
     id: 2,
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-    caption: 'Winning our 5th Hackathon',
+    image: '/images/home/2.jpeg',
   },
   {
     id: 3,
-    image: 'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800',
-    caption: 'Late night coding session',
+    image: '/images/home/3.jpeg',
   },
   {
     id: 4,
-    image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
-    caption: 'Team brainstorming session',
+    image: '/images/home/IMG_9566.jpg',
   },
   {
     id: 5,
-    image: 'https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=800',
-    caption: 'Celebrating our latest victory',
+    image: '/images/home/ABC_7391.JPEG',
   },
 ];
 
@@ -176,8 +172,8 @@ export default function Hero({ onNavigate }: HeroProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 max-w-5xl mx-auto">
           {[
-            { label: 'Hackathons Won', value: '12+' },
-            { label: 'Projects Built', value: '30+' },
+            { label: 'Hackathons Won', value: '5+' },
+            { label: 'Projects Built', value: '20+' },
             { label: 'Team Members', value: '5' },
           ].map((stat, index) => (
             <div
