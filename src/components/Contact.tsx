@@ -4,7 +4,7 @@ import { useState } from 'react';
 const videos = [
   {
     id: '1',
-    title: 'Winning Our 5th Hackathon - Behind The Scenes',
+    title: 'Our First Blockchain Hackathon with OxGenignite at NIT Goa Hackathon',
     thumbnail: 'https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=800',
     views: '15K',
     likes: '2.3K',
@@ -71,19 +71,19 @@ export default function Contact() {
               {
                 icon: Mail,
                 title: 'Email',
-                value: 'team@hackthemteam.com',
-                link: 'mailto:team@hackthemteam.com',
+                value: 'teamhackthem@gmail.com',
+                link: 'mailto:teamhackthem@gmail.com',
               },
               {
                 icon: Phone,
                 title: 'Phone',
-                value: '+1 (555) 123-4567',
-                link: 'tel:+15551234567',
+                value: '+91 7733969933',
+                link: 'tel:+917733969933',
               },
               {
                 icon: MapPin,
                 title: 'Location',
-                value: 'San Francisco, CA',
+                value: 'udaipur, Rajasthan, India',
                 link: '#',
               },
             ].map((contact, index) => {
