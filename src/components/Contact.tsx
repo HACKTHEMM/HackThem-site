@@ -1,30 +1,37 @@
 import { Mail, MessageSquare, Send, MapPin, Phone, Youtube, Play, Eye, ThumbsUp } from 'lucide-react';
 import { useState } from 'react';
 
+import hackathonThumb from '../../images/thumbnail/1.jpeg';
+import sahayakThumb from '../../images/thumbnail/2.png';
+import logithonThumb from '../../images/thumbnail/3.jpeg';
+
 const videos = [
   {
     id: '1',
     title: 'Our First Blockchain Hackathon with OxGenignite at NIT Goa Hackathon',
-    thumbnail: 'https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=800',
-    views: '15K',
-    likes: '2.3K',
-    duration: '12:45',
+    thumbnail: hackathonThumb,
+    link: 'https://youtube.com/shorts/1YANuCfj0Mw?feature=share',
+    duration: '1:12',
+    views: '3.9K',
+    likes: '420',
   },
   {
     id: '2',
-    title: 'Our Tech Stack Explained - What We Use & Why',
-    thumbnail: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-    views: '22K',
-    likes: '3.1K',
-    duration: '18:30',
+    title: 'Sahayak - Mental wellness companion',
+    thumbnail: sahayakThumb,
+    link: 'https://youtu.be/vSzmJNbBoKo',
+    duration: '6:47',
+    views: '5.2K',
+    likes: '610',
   },
   {
     id: '3',
-    title: 'Coding Challenge: Build a Feature in 1 Hour',
-    thumbnail: 'https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=800',
-    views: '18K',
-    likes: '2.7K',
-    duration: '15:20',
+    title: 'Welcome to Tech Transit’s innovative solution for Logithon 2K25!',
+    thumbnail: logithonThumb,
+    link: 'https://youtu.be/TbkB4ks63Q0',
+    duration: '4:05',
+    views: '2.6K',
+    likes: '350',
   },
 ];
 
@@ -220,10 +227,10 @@ export default function Contact() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {videos.map((video, index) => (
+            {videos.map((video) => (
               <a
-                key={index}
-                href="https://youtube.com/@hackthemteam"
+                key={video.id}
+                href={video.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card border border-gray-400/20 rounded-2xl overflow-hidden hover:glass-card-hover hover:silver-glow-hover smooth-transition hover-lift group"
@@ -266,7 +273,7 @@ export default function Contact() {
 
           <div className="text-center">
             <a
-              href="https://youtube.com/@hackthemteam"
+              href="https://www.youtube.com/channel/UCfyL54XHh6tmV4FZ9vHmz3A"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl smooth-transition hover-lift font-semibold"

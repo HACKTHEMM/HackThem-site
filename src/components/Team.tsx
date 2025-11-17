@@ -1,12 +1,13 @@
-import { Github, Linkedin, Twitter, Mail, User, Code, Award, Coffee, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, User, Code, Award, Coffee, MapPin, Globe } from 'lucide-react';
 import { useState } from 'react';
 
 const teamMembers = [
   {
     name: 'Raghavendra Baheti',
     role: 'Founder & AI/Full-Stack Lea',
+    photo: '/images/team-photo/raghavedra.JPG',
     bio: 'Dedicated to building real-world AI systems and scalable full-stack products, with a strong focus on innovation, hackathons, and impact-driven tech.',
-    location: 'San Francisco, CA',
+    location: 'Remote',
     expertise: [
       'Artificial Intelligence',
       'Machine Learning',
@@ -18,7 +19,7 @@ const teamMembers = [
       'Cloud & DevOps'
     ],
     achievements: [
-      'Winner of multiple Web3 & AI Hackathons',
+      'Winner, National Blockchain Competition',
       'Built 10+ real-world AI & full-stack projects',
       'Top performer in college-level tech competitions'
     ],
@@ -32,29 +33,29 @@ const teamMembers = [
       'Docker'
     ],
     socials: {
+      portfolio: 'https://raghavendraab.netlify.app/',
       github: 'https://github.com/raghav',
       linkedin: 'https://www.linkedin.com/in/raghavendra',
-      twitter: '#',
       email: 'bahetiraghav990@gmail.com'
     },
   },
   {
       name: 'Toheed Akhtar',
       role: 'Co-Founder & AI/ML Lead',
-      bio: 'AI/ML engineer and full-stack problem solver, passionate about architecting scalable systems, building enterprise-grade AI solutions, and driving innovation through deep technical expertise.',
-      location: 'India',
+      photo: '/images/team-photo/toheed.jpeg',
+      bio: 'I build and do whatever inspires me',
+      location: 'Remote',
       expertise: [
     'Machine Learning',
     'Deep Learning',
     'GenAI',
     'System Architecture',
-    'Cloud Computing',
-    'DevOps',
-    'Microservices',
-    'Full-Stack Engineering'
+    'Python',
+    'FastAPI',
+    'Artificial Intelligence',
   ],
   achievements: [
-    'Runner-up at Lenden TMP (Multilingual AI Sales Assistant)',
+    'Winner, National Blockchain Competition',
     'Finalist (Top 5) at Logithon’25 IIT Bombay — India’s biggest logistics hackathon',
     'National Qualifier at WHCL’25 (World Computer Hacker League)',
     'Built 10+ production-level AI and full-stack systems'
@@ -70,30 +71,33 @@ const teamMembers = [
     'PostgreSQL'
   ],
   socials: {
-    github: '#',
-    linkedin: '#',
-    twitter: '#',
-    email: 'toheedak443@gmail.com'
+    portfolio: 'https://toheedakhtar.github.io/takhtar/',
+    github: 'https://github.com/toheedakhtar',
+    linkedin: 'https://www.linkedin.com/in/toheedakhtar01/',
+    email: 'toheedak333@gmail.com'
   },
 },
   {
     name: 'Vansh Bhatnagar  ',
-    role: 'Co-Founder & Full-Stack Lead',
-    bio: 'Full-stack developer and problem solver, passionate about building scalable and user-friendly web applications, and driving innovation through deep technical expertise.',
-    location: 'India',
+    role: 'Co-Founder & AI Enthusiast',
+    photo: '/images/team-photo/vansh.jpeg',
+    bio: 'Dedicated to building real-world AI systems and scalable full-stack products, with a strong focus on innovation, hackathons, and impact-driven tech.',
+    location: 'Remote',
     expertise: [
-      'Full-Stack Development',
-      'React',
-      'Node.js',
+      'Artificial Intelligence',
+      'Machine Learning',
+      'Generative AI',
+      'NLP',
+      'Python',
+      'LLM',
       'FastAPI',
-      'Docker',
-      'Cloud & DevOps'
+      'Cloud & DevOps',
+      'Networking',
     ],
     achievements: [
-      'Winner of multiple Web3 & AI Hackathons',
-      'Built 10+ real-world AI & full-stack projects',
-      'Top performer in college-level tech competitions'
-    ],
+	'Winner, National Blockchain Competition',
+	'Runner-Up, at CodeRED4.0'
+      ],
     favoriteTools: [
       'Python', 
       'PyTorch',
@@ -104,52 +108,84 @@ const teamMembers = [
       'Docker'
     ],
     socials: {
-      github: 'https://github.com/vansh',
-      linkedin: 'https://www.linkedin.com/in/vansh',
-      twitter: '#',
-      email: 'vanshbhatnagar2004@gmail.com'
+      portfolio: 'https://www.vanshbhatnagar.space/',
+      github: 'https://github.com/Vansh41104',
+      linkedin: 'https://www.linkedin.com/in/vansh-bhatnagar-66465225b/',
+      email: 'vanshbhatnagar445@gmail.com'
     },
   },
   {
     name: 'Vinit Jain',
-    role: 'Designer & Full-Stack Lead',
-    bio: 'Designing the future of digital products',
-    location: 'India',
-    expertise: ['Full-Stack Development', 'React', 'Node.js', 'FastAPI', 'Docker', 'Cloud & DevOps'],
-    achievements: [
-      'Winner of multiple Web3 & AI Hackathons',
-      'Built 10+ real-world AI & full-stack projects',
-      'Top performer in college-level tech competitions'
+    role: 'Co-Founder & Full-Stack Lead',
+    photo: '/images/team-photo/vinit.jpeg',
+    bio: 'Dedicated full-stack engineer passionate about building AI-powered applications and innovative web solutions. Experienced in crafting high-performance systems, participating in hackathons, and expanding skill sets in cloud and data security.',
+    location: 'Remote',
+    "expertise": [
+      "Full-Stack Development",
+      "Artificial Intelligence",
+      "Cloud & DevOps",
+      "FastAPI",
+      "TypeScript & JavaScript",
+      "React.js & Next.js",
+      "Docker",
+      "Linux",
+      "Git/GitHub",
+      "Data Security",
+      "API Design",
+      "Large Language Models"
     ],
-    favoriteTools: [
-      'Python', 
-      'PyTorch',
-      'FastAPI',
-      'React.js',
-      'MongoDB',
-      'MySQL',
-      'Docker'
+    "achievements": [
+      "Developed AyleChat, a custom AI chat application leveraging cutting-edge LLMs via Groq and Exa Search",
+      "Built Displayr, a full-stack movie and TV show recommendation engine using TMDB API",
+      "Contributed to datawipe-core for secure data wiping and multiple AI-powered projects",
+  "Winner, 0xGenIgnite Web3 Hackathon (NIT Goa): Runner-up for Smart India Hackathon (internal)",
+      "Designed production-grade onboarding flows & authentication routes for GenAI dashboards",
+      "Completed 10+ full-stack web and Python applications"
     ],
+    "favoriteTools": [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Docker",
+      "FastAPI",
+      "Git/GitHub",
+      "VS Code",
+      "Groq AI",
+      "Exa Search"
+    ],
+  
     socials: {
-      github: 'https://github.com/vinit',
-      linkedin: 'https://www.linkedin.com/in/vinit',
-      twitter: '#',
-      email: 'vinitjain2004@gmail.com'
+      portfolio: 'https://vinitj088.vercel.app/',
+      github: 'https://github.com/vinitj088',
+      linkedin: 'https://www.linkedin.com/in/vinit-j-2400a7246/',
+      email: 'vinitjain088@gmail.com'
     },
   },
   {
     name: 'Mudit Gupta',
     role: 'Designer & Research',
+    photo: '/images/team-photo/mudit.jpeg',
     bio: 'Building infrastructure for tomorrow',
-    location: 'Boston, MA',
-    expertise: ['CI/CD', 'Infrastructure as Code', 'Security', 'Monitoring'],
-    achievements: 'Deployed 50+ production pipelines',
-    favoriteTools: 'Terraform, Jenkins, Grafana',
+    location: 'Remote',
+    expertise: ['Full-Stack Development', 'React', 'Node.js', 'FastAPI', 'Docker', 'Cloud & DevOps'],
+    achievements: [  'Winner of multiple Web3 & AI Hackathons',
+      'Winner, National Blockchain Competition',
+    'Top performer in college-level tech competitions'
+  ],
+    favoriteTools: [
+      'Next.js', 
+      'PyTorch',
+      'FastAPI',
+      'React.js',
+      'MongoDB',
+      'MySQL',
+      'Docker'
+    ],
     socials: {
-      github: '#',
-      linkedin: '#',
-      twitter: '#',
-      email: 'taylor@hackthemteam.com',
+      portfolio: 'https://github.com/MUDITGUPTA08',
+      github: 'https://github.com/MUDITGUPTA08',
+      linkedin: 'https://www.linkedin.com/in/mudit-gupta-495881276/',
+      email: 'mudit2005gupta@gmail.com',
     },
   },
 ];
@@ -191,12 +227,20 @@ export default function Team() {
                   <div className="glass-card border border-gray-400/20 rounded-2xl p-8 hover:glass-card-hover hover:silver-glow-hover smooth-transition hover-lift group h-full">
                     <div className="flex flex-col items-center text-center space-y-6 h-full">
                       <div className="relative">
-                        <div className="w-32 h-32 rounded-full border border-gray-400/30 flex items-center justify-center bg-gradient-to-br from-gray-400/10 to-gray-500/20 group-hover:from-gray-400/20 group-hover:to-gray-500/30 smooth-transition">
-                          <User className="w-16 h-16 text-gray-400" />
-                        </div>
-                        <div className="absolute -bottom-2 -right-2 w-9 h-9 bg-gradient-to-br from-gray-200 to-gray-400 rounded-full flex items-center justify-center silver-glow">
-                          <span className="text-sm font-bold text-black">{index + 1}</span>
-                        </div>
+                        {member.photo ? (
+                          <div className="w-32 h-32 rounded-full border border-gray-400/30 overflow-hidden silver-glow smooth-transition">
+                            <img
+                              src={member.photo}
+                              alt={`${member.name} portrait`}
+                              className="w-full h-full object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-32 h-32 rounded-full border border-gray-400/30 flex items-center justify-center bg-gradient-to-br from-gray-400/10 to-gray-500/20 group-hover:from-gray-400/20 group-hover:to-gray-500/30 smooth-transition">
+                            <User className="w-16 h-16 text-gray-400" />
+                          </div>
+                        )}
                       </div>
 
                       <div className="space-y-3 flex-grow">
@@ -208,6 +252,16 @@ export default function Team() {
                       </div>
 
                       <div className="flex items-center gap-3 pt-4">
+                        <a
+                          href={member.socials.portfolio}
+                          onClick={(e) => e.stopPropagation()}
+                          className="p-2.5 glass-card accent-border rounded-lg hover:bg-white/5 smooth-transition hover-lift"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${member.name} portfolio`}
+                        >
+                          <Globe className="w-5 h-5 text-gray-300" />
+                        </a>
                         <a
                           href={member.socials.github}
                           onClick={(e) => e.stopPropagation()}
@@ -221,13 +275,6 @@ export default function Team() {
                           className="p-2.5 glass-card accent-border rounded-lg hover:bg-white/5 smooth-transition hover-lift"
                         >
                           <Linkedin className="w-5 h-5 text-gray-300" />
-                        </a>
-                        <a
-                          href={member.socials.twitter}
-                          onClick={(e) => e.stopPropagation()}
-                          className="p-2.5 glass-card accent-border rounded-lg hover:bg-white/5 smooth-transition hover-lift"
-                        >
-                          <Twitter className="w-5 h-5 text-gray-300" />
                         </a>
                         <a
                           href={`mailto:${member.socials.email}`}
@@ -251,9 +298,20 @@ export default function Team() {
                     <div className="flex flex-col space-y-6 h-full">
                       <div className="flex items-center justify-between">
                         <h3 className="text-xl font-bold silver-accent">{member.name}</h3>
-                        <div className="w-10 h-10 rounded-full border border-gray-400/30 flex items-center justify-center bg-gradient-to-br from-gray-400/10 to-gray-500/20">
-                          <User className="w-5 h-5 text-gray-400" />
-                        </div>
+                        {member.photo ? (
+                          <div className="w-12 h-12 rounded-full border border-gray-400/30 overflow-hidden silver-glow">
+                            <img
+                              src={member.photo}
+                              alt={`${member.name} portrait`}
+                              className="w-full h-full object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-10 h-10 rounded-full border border-gray-400/30 flex items-center justify-center bg-gradient-to-br from-gray-400/10 to-gray-500/20">
+                            <User className="w-5 h-5 text-gray-400" />
+                          </div>
+                        )}
                       </div>
 
                       <div className="space-y-4 flex-grow overflow-y-auto">
@@ -287,7 +345,11 @@ export default function Team() {
                             <Award className="w-4 h-4" />
                             <span className="text-sm font-medium">Achievements</span>
                           </div>
-                          <p className="text-gray-400 text-sm">{member.achievements}</p>
+                          <ul className="list-disc list-inside space-y-1 text-gray-400 text-sm">
+                            {member.achievements.map((achievement, idx) => (
+                              <li key={idx}>{achievement}</li>
+                            ))}
+                          </ul>
                         </div>
 
                         <div className="space-y-2">
@@ -295,7 +357,16 @@ export default function Team() {
                             <Coffee className="w-4 h-4" />
                             <span className="text-sm font-medium">Favorite Tools</span>
                           </div>
-                          <p className="text-gray-400 text-sm">{member.favoriteTools}</p>
+                          <div className="flex flex-wrap gap-2">
+                            {member.favoriteTools.map((tool, idx) => (
+                              <span
+                                key={idx}
+                                className="px-2 py-1 text-xs bg-white/5 border border-gray-400/20 rounded-md text-gray-400"
+                              >
+                                {tool}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       </div>
 
