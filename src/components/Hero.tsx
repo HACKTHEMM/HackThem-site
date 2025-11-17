@@ -8,24 +8,24 @@ interface HeroProps {
 const teamPhotos = [
   {
     id: 1,
-    image: '/images/home/1.jpeg',
+    image: '/home/1.jpeg',
     caption: 'Team HackThem',
   },
   {
     id: 2,
-    image: '/images/home/2.jpeg',
+    image: '/home/2.jpeg',
   },
   {
     id: 3,
-    image: '/images/home/3.jpeg',
+    image: '/home/3.jpeg',
   },
   {
     id: 4,
-    image: '/images/home/IMG_9566.jpg',
+    image: '/home/IMG_9566.jpg',
   },
   {
     id: 5,
-    image: '/images/home/ABC_7391.JPEG',
+    image: '/home/ABC_7391.JPEG',
   },
 ];
 

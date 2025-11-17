@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'Raghavendra Baheti',
     role: 'Founder & AI/Full-Stack Lea',
-    photo: '/images/team-photo/raghavedra.JPG',
+    photo: '/team-photo/raghavedra.JPG',
     bio: 'Dedicated to building real-world AI systems and scalable full-stack products, with a strong focus on innovation, hackathons, and impact-driven tech.',
     location: 'Remote',
     expertise: [
@@ -42,7 +42,7 @@ const teamMembers = [
   {
     name: 'Toheed Akhtar',
     role: 'Co-Founder & AI/ML Lead',
-    photo: '/images/team-photo/toheed.jpeg',
+    photo: '/team-photo/toheed.jpeg',
     bio: 'I build and do whatever inspires me',
     location: 'Remote',
     expertise: [
@@ -80,7 +80,7 @@ const teamMembers = [
   {
     name: 'Vansh Bhatnagar  ',
     role: 'Co-Founder & AI Enthusiast',
-    photo: '/images/team-photo/vansh.jpeg',
+    photo: '/team-photo/vansh.jpeg',
     bio: 'Focused on building real-world AI and scalable full-stack products, with a love for innovation, hackathons, and creating tech that truly makes an impact',
     location: 'Remote',
     expertise: [
@@ -117,7 +117,7 @@ const teamMembers = [
   {
     name: 'Vinit Jain',
     role: 'Co-Founder & Full-Stack Lead',
-    photo: '/images/team-photo/vinit.jpeg',
+    photo: '/team-photo/vinit.jpeg',
     bio: 'Dedicated full-stack engineer passionate about building AI-powered applications and innovative web solutions. Experienced in crafting high-performance systems, participating in hackathons, and expanding skill sets in cloud and data security.',
     location: 'Remote',
     "expertise": [
@@ -164,7 +164,7 @@ const teamMembers = [
   {
     name: 'Mudit Gupta',
     role: 'Designer & Research',
-    photo: '/images/team-photo/mudit.jpeg',
+    photo: '/team-photo/mudit.jpeg',
     bio: 'Building infrastructure for tomorrow',
     location: 'Remote',
     expertise: ['Full-Stack Development', 'React', 'Node.js', 'FastAPI', 'Docker', 'Cloud & DevOps'],

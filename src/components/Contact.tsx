@@ -1,15 +1,11 @@
 import { Mail, MessageSquare, Send, MapPin, Phone, Youtube, Play, Eye, ThumbsUp } from 'lucide-react';
 import { useState } from 'react';
 
-import hackathonThumb from '../../images/thumbnail/1.jpeg';
-import sahayakThumb from '../../images/thumbnail/2.png';
-import logithonThumb from '../../images/thumbnail/3.jpeg';
-
 const videos = [
   {
     id: '1',
     title: 'Our First Blockchain Hackathon with OxGenignite at NIT Goa Hackathon',
-    thumbnail: hackathonThumb,
+    thumbnail: '/thumbnail/1.jpeg',
     link: 'https://youtube.com/shorts/1YANuCfj0Mw?feature=share',
     duration: '1:12',
     views: '3.9K',
@@ -18,7 +14,7 @@ const videos = [
   {
     id: '2',
     title: 'Sahayak - Mental wellness companion',
-    thumbnail: sahayakThumb,
+    thumbnail: '/thumbnail/2.png',
     link: 'https://youtu.be/vSzmJNbBoKo',
     duration: '6:47',
     views: '5.2K',
@@ -27,7 +23,7 @@ const videos = [
   {
     id: '3',
     title: 'Welcome to Tech Transit’s innovative solution for Logithon 2K25!',
-    thumbnail: logithonThumb,
+    thumbnail: '/thumbnail/3.jpeg',
     link: 'https://youtu.be/TbkB4ks63Q0',
     duration: '4:05',
     views: '2.6K',
