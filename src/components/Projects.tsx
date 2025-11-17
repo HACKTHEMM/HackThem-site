@@ -1,102 +1,66 @@
-import { Github, ExternalLink, Code2, Users, TrendingUp, Clock, Star } from 'lucide-react';
+import { Github, ExternalLink, Code2, Clock } from 'lucide-react';
 import { useState } from 'react';
 
 const projects = [
   {
-    title: 'QuantumSync',
-    description: 'Real-time quantum computing simulator with cloud integration and AI-powered optimization algorithms.',
-    tech: ['React', 'Node.js', 'TensorFlow', 'WebGL'],
-    github: '#',
-    demo: '#',
-    stats: {
-      users: '10K+',
-      uptime: '99.9%',
-      performance: '95/100',
-      stars: '2.5K'
-    },
+    title: 'LumenFX Crypto Payment Gateway',
+    description: 'Advanced Crypto Payment Gateway with real-time market analysis, predictive analytics, and automated trading strategies.',
+    tech: ['React', 'Node.js', 'Web3', 'Supabase','Rust'],
+    github: 'https://github.com/HACKTHEMM',
+    demo: 'https://lumenfx.vercel.app/',
     impact: 'Reduced quantum algorithm testing time by 70%',
-    features: ['Real-time simulation', 'Cloud integration', 'AI optimization', 'WebGL rendering'],
-    timeSpent: '3 months'
+    features: ['Real-time market analysis', 'Predictive analytics', 'Automated trading strategies', 'Crypto payment gateway'],
+    timeSpent: '1 months'
   },
   {
-    title: 'NeuralMesh',
-    description: 'Decentralized neural network training platform leveraging blockchain for secure model sharing.',
+    title: 'Sahayak - Mental wellness companion',
+    description: 'Mental wellness companion app that helps users track their mental health and wellbeing.',
     tech: ['Python', 'Ethereum', 'FastAPI', 'Docker'],
-    github: '#',
-    demo: '#',
-    stats: {
-      users: '5K+',
-      uptime: '99.8%',
-      performance: '92/100',
-      stars: '1.8K'
-    },
-    impact: 'Enabled secure model sharing for 50+ organizations',
-    features: ['Blockchain security', 'Distributed training', 'Model marketplace', 'Smart contracts'],
-    timeSpent: '4 months'
+    github: 'https://github.com/HACKTHEMM',
+    demo: 'https://sahayak-mentalhealth-611137562095.us-central1.run.app/',
+    impact: 'Helped users improve their mental health and wellbeing',
+    features: ['Mental health tracking', 'Wellbeing assessment', 'Mental health resources', 'Mental health support'],
+    timeSpent: '0.5 months'
   },
   {
-    title: 'CodeForge AI',
-    description: 'Intelligent code generation assistant with context-aware suggestions and automated testing.',
-    tech: ['TypeScript', 'OpenAI', 'PostgreSQL', 'Redis'],
-    github: '#',
+    title: 'SalesSpeak – AI Sales Chatbot',
+    description: 'Conversational AI chatbot that automates lead qualification and assists customers with smart product recommendations using NLP.',
+    tech: ['React', 'PYthon', 'FastAPI', 'OpenAI'],
+    github: 'https://github.com/HACKTHEMM',
     demo: '#',
-    stats: {
-      users: '15K+',
-      uptime: '99.95%',
-      performance: '98/100',
-      stars: '3.2K'
-    },
-    impact: 'Improved developer productivity by 45%',
-    features: ['AI code completion', 'Auto testing', 'Context awareness', 'Multi-language support'],
-    timeSpent: '5 months'
+    impact: 'Helped sales teams improve lead qualification and customer engagement',
+    features: ['AI lead qualification', 'Smart product recommendations', 'NLP', 'Conversational AI'],
+    timeSpent: '1 months'
   },
   {
-    title: 'EcoTrack',
-    description: 'Carbon footprint tracker with ML-powered insights and sustainability recommendations.',
-    tech: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
-    github: '#',
+    title: 'Voce – The Voice of City',
+    description: 'A multilingual civic engagement platform allowing citizens to raise local issues via voice or text input, enriched with sentiment analysis and translation support.',
+    tech: ['React', 'Python', 'FastAPI', 'OpenAI'],
+    github: 'https://github.com/HACKTHEMM',
     demo: '#',
-    stats: {
-      users: '8K+',
-      uptime: '99.7%',
-      performance: '90/100',
-      stars: '1.2K'
-    },
-    impact: 'Helped users reduce carbon footprint by 30% average',
-    features: ['Real-time tracking', 'ML insights', 'Sustainability tips', 'Social sharing'],
-    timeSpent: '2 months'
+    impact: 'Helped users raise local issues and engage with their community',
+    features: ['Voice or text input', 'Sentiment analysis', 'Translation support', 'Multilingual support'],
+    timeSpent: '1 Week'
   },
   {
-    title: 'StreamPulse',
-    description: 'Real-time data analytics dashboard for IoT devices with predictive maintenance alerts.',
-    tech: ['Vue.js', 'Go', 'InfluxDB', 'Grafana'],
-    github: '#',
+    title: 'CivicTrack – Civic Issue Tracker',
+    description: 'Location-based platform to report and monitor civic issues like potholes, garbage, and water leaks with status tracking, moderation, and analytics.',
+    tech: ['React', 'Python', 'FastAPI', 'OpenAI'],
+    github: 'https://github.com/HACKTHEMM',
     demo: '#',
-    stats: {
-      users: '12K+',
-      uptime: '99.9%',
-      performance: '94/100',
-      stars: '2.1K'
-    },
-    impact: 'Prevented 500+ equipment failures through predictions',
-    features: ['IoT integration', 'Predictive analytics', 'Custom dashboards', 'Alert system'],
-    timeSpent: '4 months'
+    impact: 'Helped users report and monitor civic issues',
+    features: ['Location-based reporting', 'Status tracking', 'Moderation', 'Analytics'],
+    timeSpent: '1 Week'
   },
   {
-    title: 'SecureVault',
-    description: 'Zero-knowledge proof authentication system with biometric integration and quantum-resistant encryption.',
-    tech: ['Rust', 'WebAssembly', 'Supabase', 'AWS'],
-    github: '#',
+    title: 'Multi-Modal Cross-Border Route Selectorult',
+    description: 'Advanced logistics optimization system leveraging Dijkstra Algorithm for efficient cross-border routing with real-time tracking capabilities.',
+    tech: ['Python', 'FastAPI', 'OpenAI'],
+    github: 'https://github.com/HACKTHEMM',
     demo: '#',
-    stats: {
-      users: '20K+',
-      uptime: '99.99%',
-      performance: '97/100',
-      stars: '4.5K'
-    },
-    impact: 'Zero security breaches across 20K+ users',
+    impact: 'Helped logistics companies optimize their cross-border routing',
     features: ['Zero-knowledge proofs', 'Biometric auth', 'Quantum-resistant', 'Multi-factor'],
-    timeSpent: '6 months'
+    timeSpent: '1 Week'
   },
 ];
 
@@ -196,53 +160,13 @@ export default function Projects() {
                       </div>
 
                       <div className="space-y-4 flex-grow overflow-y-auto">
-                        <div className="grid grid-cols-2 gap-3">
-                          <div className="glass-card accent-border rounded-lg p-3">
-                            <div className="flex items-center gap-2 mb-1">
-                              <Users className="w-3.5 h-3.5 text-gray-500" />
-                              <span className="text-xs text-gray-500">Users</span>
-                            </div>
-                            <p className="text-lg font-bold silver-accent">{project.stats.users}</p>
-                          </div>
-
-                          <div className="glass-card accent-border rounded-lg p-3">
-                            <div className="flex items-center gap-2 mb-1">
-                              <TrendingUp className="w-3.5 h-3.5 text-gray-500" />
-                              <span className="text-xs text-gray-500">Uptime</span>
-                            </div>
-                            <p className="text-lg font-bold silver-accent">{project.stats.uptime}</p>
-                          </div>
-
-                          <div className="glass-card accent-border rounded-lg p-3">
-                            <div className="flex items-center gap-2 mb-1">
-                              <Star className="w-3.5 h-3.5 text-gray-500" />
-                              <span className="text-xs text-gray-500">Score</span>
-                            </div>
-                            <p className="text-lg font-bold silver-accent">{project.stats.performance}</p>
-                          </div>
-
-                          <div className="glass-card accent-border rounded-lg p-3">
-                            <div className="flex items-center gap-2 mb-1">
-                              <Github className="w-3.5 h-3.5 text-gray-500" />
-                              <span className="text-xs text-gray-500">Stars</span>
-                            </div>
-                            <p className="text-lg font-bold silver-accent">{project.stats.stars}</p>
-                          </div>
-                        </div>
-
                         <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <TrendingUp className="w-4 h-4 text-gray-500" />
-                            <span className="text-xs text-gray-500 font-medium uppercase">Impact</span>
-                          </div>
+                          <span className="text-xs text-gray-500 font-medium uppercase">Impact</span>
                           <p className="text-sm text-gray-400 leading-relaxed">{project.impact}</p>
                         </div>
 
                         <div className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Code2 className="w-4 h-4 text-gray-500" />
-                            <span className="text-xs text-gray-500 font-medium uppercase">Features</span>
-                          </div>
+                          <span className="text-xs text-gray-500 font-medium uppercase">Key Features</span>
                           <div className="flex flex-wrap gap-1.5">
                             {project.features.map((feature, idx) => (
                               <span
@@ -250,6 +174,20 @@ export default function Projects() {
                                 className="px-2 py-1 text-xs bg-white/5 border border-gray-400/20 rounded text-gray-400"
                               >
                                 {feature}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <span className="text-xs text-gray-500 font-medium uppercase">Tech Stack</span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {project.tech.map((tech, idx) => (
+                              <span
+                                key={`${project.title}-tech-${idx}`}
+                                className="px-2 py-1 text-xs bg-white/5 border border-gray-400/20 rounded text-gray-400"
+                              >
+                                {tech}
                               </span>
                             ))}
                           </div>

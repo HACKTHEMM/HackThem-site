@@ -24,7 +24,7 @@ const teamMembers = [
       'Top performer in college-level tech competitions'
     ],
     favoriteTools: [
-      'Python', 
+      'Python',
       'PyTorch',
       'FastAPI',
       'React.js',
@@ -40,48 +40,48 @@ const teamMembers = [
     },
   },
   {
-      name: 'Toheed Akhtar',
-      role: 'Co-Founder & AI/ML Lead',
-      photo: '/images/team-photo/toheed.jpeg',
-      bio: 'I build and do whatever inspires me',
-      location: 'Remote',
-      expertise: [
-    'Machine Learning',
-    'Deep Learning',
-    'GenAI',
-    'System Architecture',
-    'Python',
-    'FastAPI',
-    'Artificial Intelligence',
-  ],
-  achievements: [
-    'Winner, National Blockchain Competition',
-    'Finalist (Top 5) at Logithon’25 IIT Bombay — India’s biggest logistics hackathon',
-    'National Qualifier at WHCL’25 (World Computer Hacker League)',
-    'Built 10+ production-level AI and full-stack systems'
-  ],
-  favoriteTools: [
-    'PyTorch',
-    'HuggingFace',
-    'LangGraph',
-    'FastAPI',
-    'React',
-    'Docker',
-    'AWS',
-    'PostgreSQL'
-  ],
-  socials: {
-    portfolio: 'https://toheedakhtar.github.io/takhtar/',
-    github: 'https://github.com/toheedakhtar',
-    linkedin: 'https://www.linkedin.com/in/toheedakhtar01/',
-    email: 'toheedak333@gmail.com'
+    name: 'Toheed Akhtar',
+    role: 'Co-Founder & AI/ML Lead',
+    photo: '/images/team-photo/toheed.jpeg',
+    bio: 'I build and do whatever inspires me',
+    location: 'Remote',
+    expertise: [
+      'Machine Learning',
+      'Deep Learning',
+      'GenAI',
+      'System Architecture',
+      'Python',
+      'FastAPI',
+      'Artificial Intelligence',
+    ],
+    achievements: [
+      'Winner, National Blockchain Competition',
+      'Finalist (Top 5) at Logithon’25 IIT Bombay — India’s biggest logistics hackathon',
+      'National Qualifier at WHCL’25 (World Computer Hacker League)',
+      'Built 10+ production-level AI and full-stack systems'
+    ],
+    favoriteTools: [
+      'PyTorch',
+      'HuggingFace',
+      'LangGraph',
+      'FastAPI',
+      'React',
+      'Docker',
+      'AWS',
+      'PostgreSQL'
+    ],
+    socials: {
+      portfolio: 'https://toheedakhtar.github.io/takhtar/',
+      github: 'https://github.com/toheedakhtar',
+      linkedin: 'https://www.linkedin.com/in/toheedakhtar01/',
+      email: 'toheedak333@gmail.com'
+    },
   },
-},
   {
     name: 'Vansh Bhatnagar  ',
     role: 'Co-Founder & AI Enthusiast',
     photo: '/images/team-photo/vansh.jpeg',
-    bio: 'Dedicated to building real-world AI systems and scalable full-stack products, with a strong focus on innovation, hackathons, and impact-driven tech.',
+    bio: 'Focused on building real-world AI and scalable full-stack products, with a love for innovation, hackathons, and creating tech that truly makes an impact',
     location: 'Remote',
     expertise: [
       'Artificial Intelligence',
@@ -95,11 +95,11 @@ const teamMembers = [
       'Networking',
     ],
     achievements: [
-	'Winner, National Blockchain Competition',
-	'Runner-Up, at CodeRED4.0'
-      ],
+      'Winner, National Blockchain Competition',
+      'Runner-Up, at CodeRED4.0'
+    ],
     favoriteTools: [
-      'Python', 
+      'Python',
       'PyTorch',
       'FastAPI',
       'React.js',
@@ -138,7 +138,7 @@ const teamMembers = [
       "Developed AyleChat, a custom AI chat application leveraging cutting-edge LLMs via Groq and Exa Search",
       "Built Displayr, a full-stack movie and TV show recommendation engine using TMDB API",
       "Contributed to datawipe-core for secure data wiping and multiple AI-powered projects",
-  "Winner, 0xGenIgnite Web3 Hackathon (NIT Goa): Runner-up for Smart India Hackathon (internal)",
+      "Winner, 0xGenIgnite Web3 Hackathon (NIT Goa): Runner-up for Smart India Hackathon (internal)",
       "Designed production-grade onboarding flows & authentication routes for GenAI dashboards",
       "Completed 10+ full-stack web and Python applications"
     ],
@@ -153,7 +153,7 @@ const teamMembers = [
       "Groq AI",
       "Exa Search"
     ],
-  
+
     socials: {
       portfolio: 'https://vinitj088.vercel.app/',
       github: 'https://github.com/vinitj088',
@@ -168,12 +168,12 @@ const teamMembers = [
     bio: 'Building infrastructure for tomorrow',
     location: 'Remote',
     expertise: ['Full-Stack Development', 'React', 'Node.js', 'FastAPI', 'Docker', 'Cloud & DevOps'],
-    achievements: [  'Winner of multiple Web3 & AI Hackathons',
+    achievements: ['Winner of multiple Web3 & AI Hackathons',
       'Winner, National Blockchain Competition',
-    'Top performer in college-level tech competitions'
-  ],
+      'Top performer in college-level tech competitions'
+    ],
     favoriteTools: [
-      'Next.js', 
+      'Next.js',
       'PyTorch',
       'FastAPI',
       'React.js',
@@ -216,9 +216,8 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className={`flip-card h-[480px] cursor-pointer ${
-                flippedCards.includes(index) ? 'flipped' : ''
-              }`}
+              className={`flip-card h-[480px] cursor-pointer ${flippedCards.includes(index) ? 'flipped' : ''
+                }`}
               onClick={() => toggleFlip(index)}
             >
               <div className="flip-card-inner h-full">
