@@ -69,7 +69,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 <img
                   src={teamPhotos[currentPhotoIndex].image}
                   alt={teamPhotos[currentPhotoIndex].caption}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain md:object-cover bg-black"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                   <p className="text-white text-xs font-medium">{teamPhotos[currentPhotoIndex].caption}</p>
