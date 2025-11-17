@@ -62,6 +62,16 @@ const projects = [
     features: ['Zero-knowledge proofs', 'Biometric auth', 'Quantum-resistant', 'Multi-factor'],
     timeSpent: '1 Week'
   },
+  {
+    title: 'StackIt - Q&A Platform',
+    description: 'A full-stack collaborative Q&A platform with modern UI, real-time features, and PostgreSQL-backed data intelligence.',
+    tech: ['Next.js', 'Node.js', 'Express', 'PostgreSQL','Tailwind', 'TypeScript'],
+    github: 'https://github.com/HACKTHEMM',
+    demo: '#',
+    impact: 'Helped users ask and answer questions',
+    features: ['Real-time features', 'PostgreSQL-backed data intelligence', 'Modern UI', 'Collaborative'],
+    timeSpent: '1 Week'
+  },
 ];
 
 export default function Projects() {
