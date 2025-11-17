@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles, Zap, Camera, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Sparkles, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 interface HeroProps {
